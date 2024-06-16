@@ -1,0 +1,97 @@
+\documentclass[serif]{beamer}
+
+% ---------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% ---------------------------------------------------------
+
+\usepackage{appendixnumberbeamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\addtobeamertemplate{footline}{%
+	\hspace*{\fill}%
+	\llap{%
+		\insertframenumber\,/\,\inserttotalframenumber%
+		\hspace{5pt}%
+	}
+	\vskip4pt%
+}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+% ---------------------------------------------------------
+
+\usepackage{subcaption}
+
+\usepackage{graphicx}
+
+\usepackage{changepage}
+
+\usepackage{tikz}
+
+% ---------------------------------------------------------
+
+\usepackage{amsmath}
+
+\usepackage{mathtools}
+
+\let\oldexists\exists
+\let\exists\relax\DeclareMathOperator{\exists}{\oldexists}
+\let\oldforall\forall
+\let\forall\relax\DeclareMathOperator{\forall}{\oldforall}
+
+% ---------------------------------------------------------
+
+\usepackage{overtools}
+
+\usepackage{macros}
+
+% ---------------------------------------------------------
+
+\title{
+	\Zoo[]logy of lockfree concurrent data structures
+}
+\author{
+	Clément Allain
+}
+\institute{
+	INRIA Paris
+}
+
+% ---------------------------------------------------------
+% ---------------------------------------------------------
+
+\begin{document}
+
+% ---------------------------------------------------------
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+% ---------------------------------------------------------
+
+\input{zoo}
+\input{michaelscott}
+\input{kcas}
+
+% ---------------------------------------------------------
+
+\begin{frame}[plain, noframenumbering]
+\LARGE
+\begin{center}
+	Thank you for your attention!
+\end{center}
+\end{frame}
+
+% ---------------------------------------------------------
+
+\end{document}
