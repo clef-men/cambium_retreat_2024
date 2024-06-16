@@ -52,6 +52,12 @@
 \newcommand{\circled}[1]{%
     \raisebox{.5pt}{\textcircled{\raisebox{-.9pt}{#1}}}%
 }
+\newcommand\doubleplus{%
+    +\kern-1.3ex+\kern0.8ex%
+}
+\newcommand\mdoubleplus{%
+    \ensuremath{\mathbin{+\mkern-10mu+}}%
+}
 
 % ---------------------------------------------------------
 
@@ -129,4 +135,20 @@
 }
 \newcommand{\iPredTwo}{%
     \Psi%
+}
+
+% ---------------------------------------------------------
+
+\newcommand{\aspec}[7]{%
+	\begin{array}{c}
+			\left\lbrace\, #1 \,\right\rbrace
+		\\ \hline
+			\left\langle\, \forall #2 \ldotp #3 \,\right\rangle
+		\\ \hline
+			#4
+		\\ \hline
+			\left\langle\, #5 \,\right\rangle
+		\\ \hline
+			\left\lbrace\, #6 \ldotp #7 \,\right\rbrace
+	\end{array}
 }
