@@ -4,21 +4,22 @@
 
 \begin{frame}[fragile]{\Zoo[]logy: what is it?}
 
+\begin{adjustwidth}{-1em}{-1em}
 \centering
-\vspace{5mm}
+\vspace{4mm}
 
 \begin{tikzpicture}
-    \draw [thick, teal] (0,0) rectangle ++(11,6.8) ;
-    \draw (3.5,-0.3) node [teal] {\Coq} ;
+    \draw [thick, teal] (0,0) rectangle ++(11.5,7.5) ;
+    \draw (3.75,-0.3) node [teal] {\Coq} ;
     
-    \draw [thick, orange] (0.2,0.2) rectangle ++(10.6, 6.4) ;
-    \draw (5.5, 0) node [orange] {\Iris} ;
+    \draw [thick, orange] (0.4,0.4) rectangle ++(10.7,6.7) ;
+    \draw (5.75,0.2) node [orange] {\Iris} ;
     
-    \draw [thick, magenta] (0.4,0.4) rectangle ++(10.2, 6) ;
-    \draw (7.5, 0.6) node [magenta] {\Zoo} ;
+    \draw [thick, magenta] (0.8,0.8) rectangle ++(9.9,5.9) ;
+    \draw (7.75,0.6) node [magenta] {\Zoo} ;
     
     \only<1-3>{
-        \draw (5.5, 3.5) node [magenta] {\vbox{
+        \draw (5.75,3.75) node [magenta] {\vbox{
             \begin{tabular}{l}
                 \HeapLang (modified) \\
                 + ADTs \\
@@ -33,15 +34,15 @@
     }
     
     \only<4->{
-        \draw [thick, blue] (0.8,1.8) rectangle ++(1.5,1) node [midway] {\Std} ;
+        \draw [thick, blue] (1.5,2) rectangle ++(1.5,1) node [midway] {\Std} ;
     }
     
     \only<5->{
-        \draw [thick, cyan] (0.8,3.8) rectangle ++(1.5,1) node [midway] {\Pstore} ;
+        \draw [thick, cyan] (1.5,4) rectangle ++(1.5,1) node [midway] {\Pstore} ;
     }
     
     \only<7->{
-        \draw [thick, olive] (3,1.2) rectangle ++(5,4.2) node [midway] {\vbox{
+        \draw [thick, olive] (3.75,1.5) rectangle ++(4,4) node [midway] {\vbox{
             \texttt{Mpmc\_stack} \\
             \texttt{Mpmc\_queue} \\
             \texttt{Mpsc\_queue} \\
@@ -50,16 +51,17 @@
             \texttt{Htbl} \\
             \dots
         }} ;
-        \draw (5.5,5.8) node [olive] {\Saturn} ;
+        \draw (5.75,5.8) node [olive] {\Saturn} ;
     }
     
     \only<9->{
-        \draw [thick, brown] (8.7,3.8) rectangle ++(1.5,1) node [midway] {\Parabs} ;
+        \draw [thick, brown] (8.5,4) rectangle ++(1.5,1) node [midway] {\Parabs} ;
     }
     
     \only<10->{
-        \draw [thick, violet] (8.7,1.8) rectangle ++(1.5,1) node [midway] {\Kcas} ;
+        \draw [thick, violet] (8.5,2) rectangle ++(1.5,1) node [midway] {\Kcas} ;
     }
+
 \end{tikzpicture}
 
 \begin{overbox}<2>
@@ -128,6 +130,8 @@ Definition map : val :=
 \end{overbox}
 
 \only<12>{}
+
+\end{adjustwidth}
 
 \end{frame}
 
