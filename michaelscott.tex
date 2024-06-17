@@ -122,12 +122,11 @@ let push t v =
 \begin{frame}[fragile]{Optimized \OCaml~5 implementation --- second try}
 \begin{minted}{ocaml}
 type 'a t =
-  | Nil : 'a t
-  | Next : {
+  | Nil
+  | Next of {
       mutable next: 'a t [@atomic] ;
       mutable value: 'a ;
-    } -> 
-    'a t
+    }
 
 let push t v =
   ...
